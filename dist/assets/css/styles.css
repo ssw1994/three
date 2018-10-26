@@ -1,0 +1,18 @@
+.padding0{
+    padding:0px;
+}
+.padding-l0{
+    padding-left:0px;
+}
+.padding-ro{
+    padding-right:0px;
+}
+.mat-radio-label-content{
+    position: relative;
+    padding-left: 28px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 19px;
+    display: inline-block;
+    color: #666;
+}
