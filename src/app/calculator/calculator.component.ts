@@ -10,6 +10,7 @@ export class CalculatorComponent implements OnInit {
   protected a:number;
   protected b:number;
   protected c:number;
+  protected ans:number;
 
   constructor() { }
 
