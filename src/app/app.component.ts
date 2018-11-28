@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { StateManager } from './common/StateManager';
 import { Location } from '@angular/common';
+import { SwPush } from "@angular/service-worker";
+// import SwPush = require("@angular/service-worker");
 declare var CryptoJS:any;
 @Component({
   selector: 'app-root',
@@ -10,11 +12,20 @@ declare var CryptoJS:any;
 export class AppComponent {
   title = 'app';
 
+  readonly VAPID_PUBLIC_KEY = "BA08CYw1WPNcMruNuGLWG29Di94jEkp3W_U_IFKqpIOflwVCOJvsf5nC7aCk_sYNkt_nRVauxzminUH_bNyk8Oc";
+
+
   AccountNumber:number;
   SortCode:number;
   disAccNo:any = "Account Number : ";
   disSortCode:any = "Sort Code : ";
   message:string = "";
+
+  mapStyle = {
+    "width":"60%",
+    "height":"400px"
+  }
+
   onSave(){
     try{
         console.log("Account Number : ",this.AccountNumber);
@@ -130,7 +141,7 @@ export class AppComponent {
     }
   }
 state:StateManager;
-  constructor(private location:Location){
+  constructor(private swPush:SwPush , private location:Location){
       //this.state = new StateManager(location);
       console.log(this.state);
   }
@@ -151,11 +162,81 @@ state:StateManager;
   }
   list:Array<any> = [];
   ngOnInit(){
-    this.list = [
-      {label:"Sachin",value:20},
-      {label:"sagar",value:30},
-      {label:"shubham",value:20},
-      {label:"others",value:10}
-    ]
+    this.list = this.getAddress();
   }
+
+  subscribeToNotifications(){
+    this.swPush.requestSubscription({
+      serverPublicKey: this.VAPID_PUBLIC_KEY
+  })
+  .then(sub => console.log(sub))
+  .catch(err => console.error("Could not subscribe to notifications", err));
+  }
+
+
+
+  /**
+   * @description dummy data
+   */
+    getAddress(){
+      try{
+        return [
+          {
+            woStatus:"New",
+            woTitle:"2 X TV install upto  32",
+            woPostCode:"W8 6",
+            woDate: new Date(),
+            woTime:"08:00 AM - 11:00 AM",
+            woPrice:"50.00",
+            bidPrice:"56.00",
+            latlng:{
+              lat:12.651805,
+              lng:77.208946
+            }
+          },
+          {
+            woStatus:"Draft",
+            woTitle:"Antivirus Install and Uninstall",
+            woPostCode:"WR5 3DA",
+            woDate: new Date(),
+            woTime:"11:00 AM - 16:00 AM",
+            woPrice:"100.00",
+            bidPrice:"99.00",
+            latlng:{
+              lat:9.383452,
+              lng:76.574059
+            }
+          },
+          {
+            woStatus:"Approved",
+            woTitle:"PC Installation and Update",
+            woPostCode:"B33 8TH",
+            woDate: new Date(),
+            woTime:"08:00 AM - 11:00 AM",
+            woPrice:"75.00",
+            bidPrice:"81.00",
+            latlng:{
+              lat:15.852792,
+              lng:74.498703
+            }
+          },
+          {
+            woStatus:"Deleted",
+            woTitle:"Plumbing and Cleaning",
+            woPostCode:"W8 6",
+            woDate: new Date(),
+            woTime:"08:00 AM - 11:00 AM",
+            woPrice:"20.00",
+            bidPrice:"22.00",
+            latlng:{
+              lat:30.172716,
+              lng:77.299492
+            }
+          }
+        ]
+      }catch(error){
+        console.error(error);
+      }
+    }
+
 }

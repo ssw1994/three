@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder,Validators, AbstractControl} from '@angular/forms';
 import { UserService } from '../services/user/user.service';
+import { SearchService } from "../services/search/search.service";
+import { Router } from "@angular/router";
 import { Global } from "../shared/global";
+declare var jQuery:any;
 interface user{
   username:string;
   email:string;
@@ -33,8 +36,9 @@ export class RegisterComponent implements OnInit {
   registerForm:FormGroup;
   user:user = new User();
   showPassword:boolean = false;
-
-  constructor(private fb:FormBuilder,private userService:UserService) {
+  filePath:string = "./assets/icons/";
+  
+  constructor(private fb:FormBuilder,private userService:UserService,private router:Router,private searchservice:SearchService) {
     this.registerForm = this.fb.group({
       userName:['',[Validators.required]],
       email:['',Validators.compose([Validators.required])],
@@ -67,8 +71,31 @@ export class RegisterComponent implements OnInit {
     if(iForm.valid){
       let user:user = this.user;
       this.userService.signup(user).subscribe((result)=>{
-        console.log(result);
+        if(result && result.statusCode == 200){
+          this.router.navigate(["/","mech"]).then(()=>{
+            console.log("Navigating to mech");
+            this.searchservice.setloggedUser(result.data);
+          });
+        }
       })
+    }
+  }
+
+  ngAfterViewInit(){
+    try{
+      jQuery("app-header").css("display","none");
+      jQuery("app-footer").css("display","none");
+    }catch(error){
+      console.error(error);
+    }
+  }
+
+  ngOnDestroy(){
+    try{
+      jQuery("app-header").css("display","block");
+      jQuery("app-footer").css("display","block");
+    }catch(error){
+      console.error(error);
     }
   }
 

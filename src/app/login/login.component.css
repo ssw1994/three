@@ -1,0 +1,40 @@
+.action-button button{
+    width: 100%;
+    font-family: Roboto-bold;
+    font-size:14px;
+    margin-botton:10px;
+}
+
+.login-box{
+    border:1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px;
+    padding:10px !important;
+    margin-top:100px;
+}
+
+.login-box input{
+    font-family: Roboto-bold;
+    color: lightblue;
+}
+
+.error-msg i{
+    margin-right:15px !important;
+}
+
+.extra-actions{
+    padding-top:15px;
+}
+
+.error-msg{
+    color:red;
+    font-family: Roboto-bold;
+    font-size:10px;
+    text-align: center;
+}
+.logo-img{
+    width:150px;
+    height: 100px;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}

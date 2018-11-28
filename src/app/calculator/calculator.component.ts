@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  protected a:number;
-  protected b:number;
-  protected c:number;
-  protected ans:number;
+   a:number;
+   b:number;
+   c:number;
+   ans:number;
+   equation:any;
 
   constructor() { }
 

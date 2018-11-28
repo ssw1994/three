@@ -6,13 +6,15 @@
     "productPrice":"349.0",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":3,
-    "discount":"",
-    "reviews":[
+    "productDiscount":"20%",
+    "productReviews":[
         {
             "name":"abc",
-            "review":"Great Products"
+            "review":"Great Products",
+            "img":"paulwalker.jpg"
         }
-    ]
+    ],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":2,
@@ -21,8 +23,8 @@
     "productPrice":"599.50",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":4,
-    "discount":"",
-    "reviews":[
+    "productDiscount":"",
+    "productReviews":[
         {
             "name":"Bilbo Baggins",
             "review":"Great Products",
@@ -48,7 +50,8 @@
             "review":"Good Color,price,quality",
             "img":"limitless.jpg"
         }
-    ]
+    ],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":3,
@@ -57,8 +60,9 @@
     "productPrice":"999.99",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"15%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":4,
@@ -67,8 +71,9 @@
     "productPrice":"4500",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":2,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"30%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":5,
@@ -77,8 +82,9 @@
     "productPrice":"19999",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":1,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":6,
@@ -87,8 +93,9 @@
     "productPrice":"9000",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":4,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":7,
@@ -97,8 +104,9 @@
     "productPrice":"1000",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"65%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":8,
@@ -107,8 +115,9 @@
     "productPrice":"11000",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"8%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":9,
@@ -117,8 +126,9 @@
     "productPrice":"399.00",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":3,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"5%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":10,
@@ -127,8 +137,9 @@
     "productPrice":"3500",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":2,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"45%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":11,
@@ -137,8 +148,9 @@
     "productPrice":"699.90",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":3,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":12,
@@ -147,8 +159,9 @@
     "productPrice":"259.00",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":4,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"35%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":13,
@@ -157,8 +170,9 @@
     "productPrice":"320.50",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"90%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":14,
@@ -167,8 +181,9 @@
     "productPrice":"9999",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":4,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":15,
@@ -177,8 +192,9 @@
     "productPrice":"1499",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":16,
@@ -187,8 +203,9 @@
     "productPrice":"6500.00",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"44%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":17,
@@ -197,8 +214,9 @@
     "productPrice":"1999",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":3,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"500",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 },
 {
     "productId":18,
@@ -207,7 +225,8 @@
     "productPrice":"2999",
     "productDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "productRating":5,
-    "discount":"",
-    "reviews":[]
+    "productDiscount":"10%",
+    "productReviews":[],
+    "productSpecification":["Power 2.5 HP Amp motor","4600 RPM on-load speed","precise bevel cutting up to 45 degree","9 positive meter stops","Adjustable pivot fence for cutting larger stock"]
 }
 ]

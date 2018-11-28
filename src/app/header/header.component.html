@@ -1,0 +1,30 @@
+<div class="col-md-12 col-sm-12 col-xs-12 padding0 header-box">
+  <div class="col-md-3 col-sm-3 col-xs-3 padding0">
+      <div class="logo-img" [ngStyle]="{'backgroundImage':'url(' + filePath + 'sswlogo.JPG' + ')'}"></div>
+  </div>
+  <div class="col-md-6 col-sm-6 col-xs-6 padding0 pad-top">   
+      <app-search></app-search>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3 padding0 pad-top">
+    <div class="col-md-6 col-sm-6 col-xs-6" style="text-align: right;">
+        <span (click)="gotoMyCart()" *ngIf="currentUser"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="color:white;"></i><sup>{{cartItems.length}}</sup></span>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="user-img"><i class="fa fa-user-circle fa-2x" style="color:aliceblue;" [popover]="myPopover" >
+            <popover-content #myPopover 
+            title="{{currentUser && currentUser.username ? currentUser.username : ''}}" 
+            placement="bottom"
+            [animation]="true" 
+            [closeOnClickOutside]="true" >
+<div>
+  <div class="user-options" *ngIf="currentUser">
+      <p><a (click)="showProfile()"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Profile</a></p>
+      <p><a (click)="SignOut()"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp;Signout</a></p>
+  </div>
+  <label *ngIf="!currentUser"><a (click)="SignIn()"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Login</a></label>
+</div>
+</popover-content>
+        </i></div>
+    </div>
+  </div>
+</div>

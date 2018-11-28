@@ -1,0 +1,8 @@
+.cart th,td{
+    text-align: center;
+}
+.cart th{
+    color:white;
+    background-color: black;
+    font-family: Roboto-bold;
+}

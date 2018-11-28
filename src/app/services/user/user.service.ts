@@ -29,9 +29,10 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  userApiUrl:string;
+  API_URL:string = Global.USER_URL;
+  loggedInUser:any;
   constructor(private http: HttpClient) { 
-    this.userApiUrl = Global.apiUrl;
+    //this.userApiUrl = Global.USER_URL;
   }
 
   handleError(error:any,options:any):any{
@@ -44,10 +45,18 @@ export class UserService {
    * @description this function is used for registering new user
    */
   signup(param: any): Observable<any> {
-    let url = this.userApiUrl + "/register";
-    return this.http.post(url, param, httpOptions)
+    let url = this.API_URL + "/register";
+    return this.http.put(url, param, httpOptions)
       .pipe(
       catchError(this.handleError)
       );
+  }
+
+  login(param:any):Observable<any>{
+    let url = this.API_URL + "/login";
+    return this.http.post(url,param,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      )
   }
 }

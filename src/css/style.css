@@ -17,3 +17,13 @@
 .fs-subtitle{
     
 }
+
+.logo-img{
+    width:150px;
+    height: 100px;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.register-box .mat-card.mat-card{
+    border:0px !important;
+}

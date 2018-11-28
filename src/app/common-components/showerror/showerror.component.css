@@ -1,0 +1,18 @@
+.box{
+    width: 75%;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 15px 14px #cde6f8;
+    margin-top: 10px !important;
+}
+.msg{
+    color:lightseagreen;
+    font-size:18px;
+    font-family: cursive;
+    position: relative;
+    top: 25%;
+}
+.msg i{
+    margin-right:10px;
+}

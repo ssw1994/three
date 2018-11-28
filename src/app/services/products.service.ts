@@ -4,11 +4,10 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
-
+import { Global } from "../shared/global";
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    'Authorization': 'my-auth-token'
   })
 }
 
@@ -18,6 +17,7 @@ const httpOptions = {
 export class ProductsService {
 
   currentProduct:any;
+  API_URL = Global.PRODUCT_URL;
   constructor(private http: HttpClient) { 
 
   }
@@ -31,7 +31,8 @@ export class ProductsService {
     let url = "./assets/products/";
     switch(param.type){
       case "MECH":
-      url += "Mech/products.json";
+      //url += "Mech/products.json";
+      url = this.API_URL;
       break;
       case "IT":
       url += "IT/products.json";

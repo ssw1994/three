@@ -1,0 +1,16 @@
+.header-box{
+    background-color:gray;
+}
+.pad-top{
+    padding-top:2.5%;
+}
+.user-options p:hover{
+    background-color:lightgray;
+}
+sup{
+    font-weight: bold;
+    font-size:13px;
+    font-family: Roboto-bold;
+    color:yellow;
+    top:-1.5em !important;
+}

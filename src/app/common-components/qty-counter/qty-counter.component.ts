@@ -11,7 +11,7 @@ export class QtyCounterComponent implements OnInit {
   quantity:number;
   
   @Output()
-  getQauntity = new EventEmitter<number>();
+  getQuantity = new EventEmitter<any>();
 
   constructor() { 
 
@@ -20,6 +20,8 @@ export class QtyCounterComponent implements OnInit {
   inc(){
     try{
       this.quantity +=1;
+      if(this.getQuantity)
+        this.getQuantity.emit(this.quantity);
     }catch(error){
       console.error(error);
     }
@@ -28,6 +30,8 @@ export class QtyCounterComponent implements OnInit {
   dec(){
     try{
       this.quantity -= 1;
+      if(this.getQuantity)
+        this.getQuantity.emit(this.quantity);
     }catch(error){
       console.error(error);
     }

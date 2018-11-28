@@ -15,14 +15,17 @@ import { CalculatorComponent } from '../calculator/calculator.component';
 import { ApiTesterComponent } from '../api-tester/api-tester.component';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
 import { DetailsGuards } from "../common/routeGuards/detailsGuard";
+import { MapGComponent } from "../map-g/map-g.component";
+import { MycartComponent } from "../mycart/mycart.component";
 export const routes: Routes = [
-    { path:'',pathMatch:'full',redirectTo:'/rules'},
+    { path:'',pathMatch:'full',redirectTo:'/login'},
     { path:'login',component:LoginComponent},
     { path:'register',component:RegisterComponent},
     { path:'mech',component:MechComponent},
     { path:'mail',component:MailsComponent},
     { path:'gallary',component:ImageGallaryComponent},
     { path:'ITRDoc',component:ITRComponent},
+    { path:"map",component:MapGComponent },
     {path:"maps",component:MultipleMapsComponent},
     {path:"auto",component:CustomAutocompleteComponent},
     {path:"drop",component:CustomDropComponent},
@@ -30,7 +33,8 @@ export const routes: Routes = [
     {path:"stepper",component:CustomStepperComponent},
     {path:"calc",component:CalculatorComponent},
     {path:"postman",component:ApiTesterComponent},
-    {path:"product-details/:id",component:ProductDetailsComponent,canActivate:[DetailsGuards]}
+    {path:"product-details/:id",component:ProductDetailsComponent,canActivate:[DetailsGuards]},
+    {path:"mycart",component:MycartComponent}
 ];
 @NgModule({
     imports: [

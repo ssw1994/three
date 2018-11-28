@@ -5,11 +5,12 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { RoutingModule } from './routing/routing.module';
+import { PopoverModule } from "ng4-popover";
 import 'hammerjs';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
-import { MechComponent } from './mech/mech.component';
+import { MechComponent,CSliceFilter } from './mech/mech.component';
 import { MailsComponent } from './mails/mails.component';
 import { RatingComponent } from './rating/rating.component';
 import { ImageGallaryComponent } from './image-gallary/image-gallary.component';
@@ -43,10 +44,20 @@ import { QtyCounterComponent } from './common-components/qty-counter/qty-counter
 import { DetailsGuards } from "./common/routeGuards/detailsGuard";
 import { ImgGallaryComponent } from './common-components/img-gallary/img-gallary.component';
 import { SyncImage } from './common-components/img-gallary/imgSync';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { MapGComponent } from './map-g/map-g.component';
+import { SearchComponent,filterPipe } from './common-components/search/search.component';
+import { ShowerrorComponent } from './common-components/showerror/showerror.component';
+import { CProductComponent } from './cproduct/cproduct.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MycartComponent } from './mycart/mycart.component';
 @NgModule({
   declarations: [
     AppComponent,
     MechComponent,
+    CSliceFilter,
     MailsComponent,
     RatingComponent,
     ImageGallaryComponent,
@@ -80,7 +91,15 @@ import { SyncImage } from './common-components/img-gallary/imgSync';
     ProductDetailsComponent,
     QtyCounterComponent,
     ImgGallaryComponent,
-    SyncImage
+    SyncImage,
+    MapGComponent,
+    SearchComponent,
+    filterPipe,
+    ShowerrorComponent,
+    CProductComponent,
+    HeaderComponent,
+    FooterComponent,
+    MycartComponent
   ],
   imports: [
     BrowserModule,
@@ -88,9 +107,11 @@ import { SyncImage } from './common-components/img-gallary/imgSync';
     HttpClientModule,
     HttpModule,
     FormsModule,
+    PopoverModule,
     ReactiveFormsModule,
     RoutingModule,
-    SharedModule
+    SharedModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   entryComponents:[fileSave],
   providers: [DetailsGuards],
