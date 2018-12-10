@@ -1,19 +1,47 @@
-<div class="col-md-offset-3 col-sm-offset-3 col-md-6 col-sm-6 col-xs-12 table-responsive" style="padding-top:10px;">
-    <table class="table table-bordered table-striped cart">
-        <thead class="thead-dark">
-          <th>#</th>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th></th>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of cartItems;let i = index;">
-            <td>{{i+1}}</td>
-            <td>{{item.productId}}</td>
-            <td>{{item.quantity}}</td>
-            <td></td>
-          </tr>
-        </tbody>
-    </table>
+<div class="col-md-8 col-sm-8 col-xs-12 stepper padding0">
+  <div>
+    <mat-card>
+      <div class="prg-bar col-md-offset-2 col-sm-offset-2 col-xs-offset-3" [ngClass]="{'disabled':isLinear}">
+          <div *ngFor="let step of steps;let i = index" class="step-box col-md-3">
+              <div class="step-number" [ngClass]="{'disabled':!step.visited }"><div class="h_line" *ngIf="i < steps.length -1" [ngClass]="{'completed_h_line':activeStep.step > step.step , 'in-completed_h_line': activeStep.step <= step.step}"></div><button [ngClass]="{'active-step':activeStep.step >= i }" (click)="stepClick(step)">{{i+1}}</button></div>
+              <div class="step-title hidden-xs">{{step.title}}</div>
+          </div>
+      </div>
+    </mat-card>
+  </div>
+  
+  <div class="col-md-12 col-sm-12 col-xs-12 padding0">
+    <mat-card class="stepBlock">
+        <div class="col-md-12 col-sm-12 col-xs-12 padding0">
+            <!-- <h2 class="fs-title">{{activeStep.title}}</h2> -->
+            <!-- <h3 class="fs-subtitle">{{"step " + (activeStep.step + 1) + " of " + steps.length}}</h3> -->
+            <ng-template appHost></ng-template>
+        </div>
+     </mat-card>
+  </div>
 </div>
 
+<div class="col-md-4 col-sm-4 col-xs-12">
+    <mat-card class="stepBlock">
+        <div class="col-md-12 col-sm-12 col-xs-12 summary-header">
+          <div class="col-md-8 col-sm-8 col-xs-6 padding0"><span>Order Summary</span></div>
+          <div class="col-md-4 col-sm-4 col-xs-6"><a>Edit Cart</a></div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 padding0 sum-div">
+          <div class="col-md-6 col-sm-6 col-xs-6"><span class="summary-label">Subtotal :</span></div>
+          <div class="col-md-6 col-sm-6 col-xs-6"><span class="summary-price"><strong>300</strong></span></div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 padding0 sum-div">
+            <div class="col-md-6 col-sm-6 col-xs-6 paddin0"><span class="summary-label">Shipping :</span></div>
+            <div class="col-md-6 col-sm-6 col-xs-6 paddin0"><span class="summary-price"><strong>50</strong></span></div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 padding0 sum-div">
+            <div class="col-md-6 col-sm-6 col-xs-6 paddin0"><span class="summary-label">Estimated Sales tax:</span></div>
+            <div class="col-md-6 col-sm-6 col-xs-6 paddin0"><span class="summary-price"><strong>25</strong></span></div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 tot-div padding0 sum-div">
+            <div class="col-md-5 col-sm-5 col-xs-6 paddin0"><span class="summary-label">2 item(s)</span></div>
+            <div class="col-md-7 col-sm-7 col-xs-6 paddin0"><span class="summary-price">Total : <strong>375</strong></span></div>
+        </div>
+     </mat-card>
+</div>

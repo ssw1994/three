@@ -53,6 +53,11 @@ import { CProductComponent } from './cproduct/cproduct.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MycartComponent } from './mycart/mycart.component';
+import { CartComponent } from './shipping/cart/cart.component';
+import { ShipAddressComponent } from './shipping/ship-address/ship-address.component';
+import { PaymentComponent } from './shipping/payment/payment.component';
+import { HostDirective } from './shipping//host.directive';
+import { SummaryComponent } from './summary/summary.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -99,7 +104,12 @@ import { MycartComponent } from './mycart/mycart.component';
     CProductComponent,
     HeaderComponent,
     FooterComponent,
-    MycartComponent
+    MycartComponent,
+    CartComponent,
+    ShipAddressComponent,
+    PaymentComponent,
+    HostDirective,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -113,7 +123,7 @@ import { MycartComponent } from './mycart/mycart.component';
     SharedModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
-  entryComponents:[fileSave],
+  entryComponents:[fileSave,CartComponent,ShipAddressComponent,PaymentComponent],
   providers: [DetailsGuards],
   bootstrap: [AppComponent]
 })

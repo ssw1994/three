@@ -27,3 +27,8 @@
 .register-box .mat-card.mat-card{
     border:0px !important;
 }
+.disabled{
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    opacity: 0.7 !important;
+}

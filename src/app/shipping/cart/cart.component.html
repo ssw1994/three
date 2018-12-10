@@ -1,0 +1,35 @@
+<div class="col-md-12 col-sm-12 col-xs-12 padding0 cart-div">
+    <div class="col-md-12 col-sm-12 col-xs-12 padding0 item-header">
+      <div class="col-md-2 col-sm-2 col-xs-2">Product</div>
+      <div class="col-md-2 col-sm-2 col-xs-2">Details</div>
+      <div class="col-md-2 col-sm-2 col-xs-2 padding0">Price</div>
+      <div class="col-md-2 col-sm-2 col-xs-2">Number</div>
+      <div class="col-md-2 col-sm-2 col-xs-2 padding0">Total</div>
+      <div class="col-md-2 col-sm-2 col-xs-2 padding0"></div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 padding0 item-row" *ngFor="let item of cartItems;let i=index;">
+      <div class="col-md-2 col-sm-2 col-xs-2 prd-img" [ngStyle]="{'background-image' : 'url('+ (filePath + item.img) +')'}"></div>
+      <div class="col-md-2 col-sm-2 col-xs-2">
+        {{item.details}}
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-2 padding0">
+          {{item.price}}
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-2">
+          <app-qty-counter [quantity]="item.quantity ? item.quantity : 1" (getQuantity)="setQuantity($event,item)"></app-qty-counter>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-2 padding0">
+        {{ getTotal(item)}}
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-2 padding0">
+        <span (click)="removeItem(item,i);" matTooltip="remove"><i class="fa fa-trash fa-lg"></i></span>        
+      </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 padding0 tot-div">
+      <div class="col-md-3 col-sm-3 col-xs-12"><span>Product(s) : </span><span><strong>{{cartItems.length}}</strong></span></div>
+      <div class="col-md-3 col-sm-3 col-xs-12"><span>Total : </span><span><strong>{{getCartTotal()}}</strong></span></div>
+      <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn">Contiue Shop</button></div>
+      <div class="col-md-3 col-sm-3 col-xs-12"><button (click)="checkout()" class="btn">Checkout</button></div>
+    </div>
+</div>

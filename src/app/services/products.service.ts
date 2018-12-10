@@ -46,4 +46,12 @@ export class ProductsService {
       catchError(this.handleError('getProducts', []))
       );
   }
+
+  sendNotification(){
+    try{
+      return this.http.post(Global.NOTIFICATION_URL + "/notification",{},httpOptions).pipe();
+    }catch(error){
+      console.error(error);
+    }
+  }
 }

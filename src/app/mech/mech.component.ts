@@ -55,10 +55,10 @@ export class MechComponent implements OnInit,OnDestroy {
   }
 
   ngAfterViewChecked(){
-    // this.searchservice.page.subscribe((IPage)=>{
-    //   this.start = IPage && IPage.startIndex >= 0 ? IPage.startIndex : 0;
-    //   this.end = IPage && IPage.endIndex >= 0 ? IPage.endIndex : this.products.length;
-    // });
+    this.searchservice.page.subscribe((IPage)=>{
+       this.start = IPage && IPage.startIndex >= 0 ? IPage.startIndex : 0;
+      this.end = IPage && IPage.endIndex >= 0 ? IPage.endIndex : this.products.length;
+    });
   }
 
   getProducts(){

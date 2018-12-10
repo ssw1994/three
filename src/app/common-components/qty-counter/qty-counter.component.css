@@ -6,3 +6,8 @@
 .counter button,input{
     border-radius: 0px !important;
 }
+.disabled{
+    pointer-events: none;
+    cursor: none !important;
+    opacity: 0.7 !important;
+}
