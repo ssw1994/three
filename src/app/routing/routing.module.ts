@@ -34,7 +34,8 @@ export const routes: Routes = [
     {path:"calc",component:CalculatorComponent},
     {path:"postman",component:ApiTesterComponent},
     {path:"product-details/:id",component:ProductDetailsComponent,canActivate:[DetailsGuards]},
-    {path:"mycart",component:MycartComponent}
+    {path:"mycart",component:MycartComponent},
+    {path:"todo",loadChildren:"../todo/todo.module#TodoModule"}
 ];
 @NgModule({
     imports: [

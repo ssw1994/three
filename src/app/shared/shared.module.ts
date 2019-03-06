@@ -35,6 +35,7 @@ import {
     MatToolbarModule,
     MatTooltipModule,
 } from '@angular/material';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
     imports: [
@@ -102,10 +103,12 @@ import {
         MatToolbarModule,
         MatTooltipModule,
         NgxMaskModule,
-        MatStepperModule
+        MatStepperModule,
+        AuthComponent,
     ],
     providers: [
         { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
     ],
+    declarations: [AuthComponent],
 })
 export class SharedModule { }
