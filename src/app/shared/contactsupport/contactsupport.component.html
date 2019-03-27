@@ -1,0 +1,16 @@
+<div class="col-md-6 col-sm-8 co-xs-12">
+  <mat-card>
+    <mat-card-content>
+      <mat-form-field>
+        <input type="email" matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Favorite food">
+          <mat-option *ngFor="let subject of subject" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+</div>

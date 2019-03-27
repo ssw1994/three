@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import {NgxMaskModule} from 'ngx-mask'
+import { SocketIoModule, SocketIoConfig } from 'ng6-socket-io';
 import { DateAdapter, NativeDateAdapter } from '@angular/material';
 import { MAT_DATE_LOCALE } from '@angular/material';
 import {MatStepperIntl,MatStepperModule} from '@angular/material/stepper';
@@ -36,6 +37,10 @@ import {
     MatTooltipModule,
 } from '@angular/material';
 import { AuthComponent } from './auth/auth.component';
+import { ChatComponent } from './chat/chat.component';
+//import { ContactsupportComponent } from './contactsupport/contactsupport.component';
+
+//const config: SocketIoConfig = { url: 'http://localhost:3001', options: {} };
 
 @NgModule({
     imports: [
@@ -69,7 +74,8 @@ import { AuthComponent } from './auth/auth.component';
         MatTabsModule,
         MatToolbarModule,
         MatTooltipModule,
-        NgxMaskModule.forRoot()
+        NgxMaskModule.forRoot(),
+        //SocketIoModule.forRoot(config)
     ],
     exports: [
         MatAutocompleteModule,
@@ -105,10 +111,11 @@ import { AuthComponent } from './auth/auth.component';
         NgxMaskModule,
         MatStepperModule,
         AuthComponent,
+        ChatComponent
     ],
     providers: [
         { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
     ],
-    declarations: [AuthComponent],
+    declarations: [AuthComponent, ChatComponent /*ContactsupportComponent*/],
 })
 export class SharedModule { }

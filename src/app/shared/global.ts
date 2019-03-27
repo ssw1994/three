@@ -7,6 +7,7 @@ export class Global{
     public static TODO_URL:string;
     public static CART_URL:string;
     public static NOTIFICATION_URL:string;
+    public static CHAT_URL:string;
     constructor(url:string){
         if(url.includes("localhost")){
             this.setLocal();
@@ -24,6 +25,8 @@ export class Global{
             Global.CART_URL = "http://localhost:3001/carts";
             Global.NOTIFICATION_URL = "http://localhost:3001/notification";
             Global.TODO_URL = "http://localhost:3001/todo/";
+            Global.CHAT_URL = "http://localhost:3001/chat/";
+
         }catch(error){
             console.error(error);
         }
@@ -37,6 +40,7 @@ export class Global{
             Global.CART_URL = "https://sheltered-crag-25135.herokuapp.com/carts";
             Global.NOTIFICATION_URL = "https://sheltered-crag-25135.herokuapp.com/notification";
             Global.TODO_URL = "https://sheltered-crag-25135.herokuapp.com/todo/";
+            Global.CHAT_URL = "https://sheltered-crag-25135.herokuapp.com/chat/";
         }catch(error){
             console.error(error);
         }
