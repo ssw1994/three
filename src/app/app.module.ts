@@ -58,6 +58,7 @@ import { ShipAddressComponent } from './shipping/ship-address/ship-address.compo
 import { PaymentComponent } from './shipping/payment/payment.component';
 import { HostDirective } from './shipping//host.directive';
 import { SummaryComponent } from './summary/summary.component';
+import { ContactsupportComponent } from "./shared/contactsupport/contactsupport.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -109,7 +110,8 @@ import { SummaryComponent } from './summary/summary.component';
     ShipAddressComponent,
     PaymentComponent,
     HostDirective,
-    SummaryComponent
+    SummaryComponent,
+    ContactsupportComponent
   ],
   imports: [
     BrowserModule,
