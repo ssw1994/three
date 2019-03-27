@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactsupport.component.css']
 })
 export class ContactsupportComponent implements OnInit {
-
+  subjects:Array<any> = [];
   constructor() { }
 
   ngOnInit() {

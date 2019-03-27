@@ -6,7 +6,7 @@
       </mat-form-field>
       <mat-form-field>
         <mat-select placeholder="Favorite food">
-          <mat-option *ngFor="let subject of subject" [value]="food.value">
+          <mat-option *ngFor="let subject of subjects" [value]="food.value">
             {{food.viewValue}}
           </mat-option>
         </mat-select>
